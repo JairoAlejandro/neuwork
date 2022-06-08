@@ -39,10 +39,6 @@ document.body.addEventListener('click',(e)=>{
     }
 })
 
-window.addEventListener('load',()=>{
-    console.log('asdsad')
-    
-})
     
 
 
