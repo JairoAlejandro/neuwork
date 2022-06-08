@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/neuwork.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Neomorfismo</title>
+</head>
+<body>
+    <nav class="nav flat" id="menu">
+        <a href="/views/custom.html" class="nav-item">
+            <i class='bx bxs-customize'></i>Custom
+        </a>
+        <a href="/views/flat.html" class="nav-item">
+            <svg class="icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 26C16.8954 26 16 26.8954 16 28V32C16 33.1046 15.1046 34 14 34H6C4.89543 34 4 34.8954 4 36C4 37.1046 4.89543 38 6 38H14C17.3137 38 20 35.3137 20 32V30H44V32C44 35.3137 46.6863 38 50 38H58C59.1046 38 60 37.1046 60 36C60 34.8954 59.1046 34 58 34H50C48.8954 34 48 33.1046 48 32V28C48 26.8954 47.1046 26 46 26H18Z"/>
+                </svg>Flat
+        </a>
+        <a href="/views/pressed.html" class="nav-item">
+            <svg class="icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M46 38C47.1046 38 48 37.1046 48 36V32C48 30.8954 48.8954 30 50 30L58 30C59.1046 30 60 29.1046 60 28C60 26.8954 59.1046 26 58 26L50 26C46.6863 26 44 28.6863 44 32V34L20 34V32C20 28.6863 17.3137 26 14 26L6 26C4.89543 26 4 26.8954 4 28C4 29.1046 4.89543 30 6 30L14 30C15.1046 30 16 30.8954 16 32L16 36C16 37.1046 16.8954 38 18 38L46 38Z"/>
+                </svg>
+                Pressed
+        </a>
+        <a href="/views/concave.html" class="nav-item">
+            <svg class="icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 33.9687C41.0682 35.2144 36.7788 36 32 36C27.2212 36 22.9318 35.2144 20 33.9687L20 30C20 26.6863 17.3137 24 14 24L6 24C4.89543 24 4 24.8954 4 26C4 27.1046 4.89543 28 6 28L14 28C15.1046 28 16 28.8954 16 30L16 34C16 37.3137 23.1634 40 32 40C40.8366 40 48 37.3137 48 34V30C48 28.8954 48.8954 28 50 28L58 28C59.1046 28 60 27.1046 60 26C60 24.8954 59.1046 24 58 24L50 24C46.6863 24 44 26.6863 44 30V33.9687Z"/>
+                </svg>Concave
+        </a>
+        <a href="/views/convex.html" class="nav-item">
+            <svg class="icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 30.0313C22.9318 28.7856 27.2212 28 32 28C36.7788 28 41.0682 28.7856 44 30.0313V34C44 37.3137 46.6863 40 50 40H58C59.1046 40 60 39.1046 60 38C60 36.8954 59.1046 36 58 36H50C48.8954 36 48 35.1046 48 34V30C48 26.6863 40.8366 24 32 24C23.1634 24 16 26.6863 16 30V34C16 35.1046 15.1046 36 14 36H6C4.89543 36 4 36.8954 4 38C4 39.1046 4.89543 40 6 40H14C17.3137 40 20 37.3137 20 34V30.0313Z"/>
+                </svg></i>Convex
+        </a>
+    </nav>
+    <main>
+        <header class="header">
+            <i class='bx bx-menu flat' id="menu-toggle"></i>
+            <a href=""><h1>Neuwork</h1></a>
+            <darkmode-toggle class="pressed"></darkmode-toggle>
+        </header>
+        <section id="root"></section>
+        <footer>
+            <p id="footer-msg">Made with &hearts; by jaydev</p>
+        </footer>
+    </main>
+    
+    
+    <script src="/js/router.js"></script>
+    <script src="/js/dark-mode.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/customizer.js"></script>
+</body>
+</html>

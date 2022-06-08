@@ -1,0 +1,30 @@
+:root{
+    --dark-shadow: #b8b8b8;
+    --light-shadow: #ffffff;
+    --dark-gradient: #d1d1d1;
+    --light-gradient: #ffffff;
+    --distance: 2px;
+    --blur: 2px;
+    --distance-n: calc(-1*var(--distance));
+}
+.flat,.pressed{
+    background-color: var(--bg-color);
+}
+.flat{
+    box-shadow: var(--distance) var(--distance) var(--blur) var(--dark-shadow)
+    ,var(--distance-n) var(--distance-n)  var(--blur) var(--light-shadow);
+}
+.pressed{
+    box-shadow: inset var(--distance) var(--distance) var(--blur) var(--dark-shadow)
+    ,inset var(--distance-n) var(--distance-n)  var(--blur) var(--light-shadow);
+}
+.convex{
+    background-image: linear-gradient(330deg, var(--dark-gradient),var(--light-gradient));
+    box-shadow: var(--distance) var(--distance) var(--blur) var(--dark-shadow)
+    ,var(--distance-n) var(--distance-n)  var(--blur) var(--light-shadow);
+}
+.concave{
+    background-image: linear-gradient(330deg, var(--light-gradient),var(--dark-gradient));
+    box-shadow: var(--distance) var(--distance) var(--blur) var(--dark-shadow)
+    ,var(--distance-n) var(--distance-n)  var(--blur) var(--light-shadow);
+}

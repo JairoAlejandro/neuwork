@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    overflow: hidden;
+}
+body.dark-theme{
+    --bg-color: #1d1d1d;
+    --surface-color: #3a3a3a;
+    --text-color: #fff;
+    --dark-shadow: #0e0e0e;
+    --light-shadow: #353535;
+    --light-gradient: #333;
+    --dark-gradient: #141414;
+}
+.bx{
+    font-size: 32px;
+    border-radius: 4px;
+}
+.icon{
+    width: 24px;
+    fill: var(--primary-color);
+}
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: var(--bg-color);
+    box-shadow: var(--distance)  var(--distance) var(--blur) var(--dark-shadow);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+.nav{
+    display: flex;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 12px;
+}
+.nav-item>.bx{
+    font-size: 24px;
+}
+#menu{
+    flex-direction: column;
+    overflow: hidden;
+    width: 200px;
+    min-width: 200px;
+}
+#menu.hidden{
+    width: 0;
+    min-width: 0;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    min-height: fit-content;
+    height: 100%;
+}
+footer{
+    margin-top: auto;
+    padding: 0 12px;
+}
+.square{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 0.4em;
+}
+.dark-mode{
+    width: 48px;
+    height: 24px;
+    border-radius: 24px;
+}
+.darkmode-btn{
+    content: '';
+    display: flex;
+    aspect-ratio: 1/1;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+}
+.dark-mode.active>.darkmode-btn{
+    transform: translateX(100%);
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #ffff;
+    padding: 8px 12px;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    transition-property: color,background-color;
+    transition-duration: var(--transition);
+}
+.btn-primary:hover{
+    background-color: #6161ff42;
+    color: var(--primary-color);
+}
+#footer-msg{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+code{
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    box-shadow: inset var(--distance) var(--distance) var(--blur) var(--dark-shadow),
+    inset var(--distance-n) var(--distance-n) var(--blur) var(--light-shadow);
+    margin: 24px auto;
+    width: 100%;
+}
